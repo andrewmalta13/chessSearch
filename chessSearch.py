@@ -141,7 +141,12 @@ if __name__ == "__main__":
         else:
             print("Please enter a valid piece: [king | bishop | knight]")
 
-        result = search(start, goal, gen_moves)
+        try:
+            result = search(start, goal, gen_moves)
+        except AssertionError:
+            print "Either the start or the goal is not a valid board position."
+            continue
+
         if result >= 0:
             print("The {0} takes {1} moves to get from {2} to {3}".format(
                 piece, result, start, goal))
