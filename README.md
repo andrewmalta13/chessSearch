@@ -18,6 +18,6 @@ the list of pieces implemented are as follows: \
 The board is parameterized by positions of the form: \
 `(0 <= x <= 7, 0 <= y <= 7)`
 
-To Quit enter one of the following commands. 
+To quit enter one of the following commands. 
 
 `q | quit | exit`
